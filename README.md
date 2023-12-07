@@ -26,7 +26,7 @@ Flakiness". We also provide step by step instructions on how to expand the provi
 ![view-raw-logs](images/view-raw-logs.jpg)
 </details>
 
-### Generating the Aggregated Statistics Dataset
+### Evaluating the Aggregated Statistics Dataset
 
 cd into `parse-logs` and execute `npm run build; npm run run`. A json file containing the aggregated data will be generated at `data/aggregated-stats.json`.
 
