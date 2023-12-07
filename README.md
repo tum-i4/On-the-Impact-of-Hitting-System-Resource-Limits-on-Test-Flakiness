@@ -35,6 +35,6 @@ If you have multiple projects you can merge the json arrays in each `aggregated-
 ## Analysing the Dataset
 
 1. Make sure to have a `aggregated-stats.json` file in `data`. This could contain the data from a single or multiple projects.
-2. install the required python libraries: `pip install -r requirements.txt`
-3. Open `dataset-analysis.ipynb`
+2. install the required python libraries: `pip install -r requirements.txt`.
+3. Open `dataset-analysis.ipynb`.
 4. Execute the Jupyter Notebook. If you do not have LaTeX installed remember to update the respective variable inside of the notebook to generate the plots.
