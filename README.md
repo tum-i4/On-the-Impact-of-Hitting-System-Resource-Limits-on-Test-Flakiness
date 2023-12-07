@@ -26,13 +26,13 @@ Flakiness". We also provide step by step instructions on how to expand the provi
 ![view-raw-logs](images/view-raw-logs.jpg)
 </details>
 
-### Evaluating the Aggregated Statistics Dataset
+### Generating the Aggregated Statistics Dataset
 
 cd into `parse-logs` and execute `npm run build; npm run run`. A json file containing the aggregated data will be generated at `data/aggregated-stats.json`.
 
 If you have multiple projects you can merge the json arrays in each `aggregated-stats.json` into one.
 
-## Analysing the Dataset
+## Evaluating the Dataset
 
 1. Make sure to have a `aggregated-stats.json` file in `data`. This could contain the data from a single or multiple projects.
 2. install the required python libraries: `pip install -r requirements.txt`.
