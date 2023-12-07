@@ -1,0 +1,32 @@
+name: Run Tests and Measure Resource Usage
+on:
+  pull_request:
+  push:
+  workflow_dispatch:
+
+env:
+  test-results-check-name: Test results
+
+jobs:
+  ui-tests-run:
+    runs-on: macos-12
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Switch Xcode version
+        run: sudo xcode-select -s "/Applications/Xcode_14.2.app"
+      - name: Collect Workflow Telemetry
+        uses: AlexPerathoner/workflow-telemetry-action@v0.9
+        with:
+          metric_frequency_thousands_of_second: 100
+      - name: Build and Test
+        continue-on-error: true
+        id: run-tests
+        run: |
+          xcodebuild clean test \
+          -project <path-to-proj.xcodeproj> \
+          -scheme <scheme> \
+          -destination platform=macOS \
+          -resultBundlePath TestResults \
+          -test-iterations 30 \
+          CODE_SIGNING_ALLOWED=NO || exit 1
