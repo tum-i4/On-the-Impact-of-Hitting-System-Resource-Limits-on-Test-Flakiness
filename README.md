@@ -1,7 +1,7 @@
 # On the Impact of Hitting System Resource Limitations on Test Flakiness
 
 This repository contains the code for the [FTW](https://conf.researchr.org/home/icse-2024/ftw-2024) paper "On the Impact of Hitting System Resource Limitations on Test
-Flakiness". We also provide step by step instructions on how to expand the provided dataset, available on [FigShare](https://figshare.com/s/a983c7fe642ba7202dd8).
+Flakiness". We also provide step by step instructions on how to expand the provided dataset, available on [FigShare](https://figshare.com/articles/dataset/Aggregated_Statistics_Dataset/24639174).
 
 
 ## Generating Aggregated Statistics File from a Project
