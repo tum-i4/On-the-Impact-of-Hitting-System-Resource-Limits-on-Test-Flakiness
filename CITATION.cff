@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: >-
+  On the Impact of Hitting System Resource Limits on Test
+  Flakiness
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - family-names: Leinen
+    given-names: Fabian
+    orcid: 'https://orcid.org/0009-0007-9291-3315'
+  - family-names: Perathoner
+    given-names: Alexander
+    orcid: 'https://orcid.org/0009-0009-7414-7797'
+  - family-names: Pretschner
+    given-names: Alexander
+    orcid: 'https://orcid.org/0000-0002-5573-1201'
+identifiers:
+  - type: doi
+    value: 10.1145/3643656.3643898
+repository-code: >-
+  https://github.com/tum-i4/On-the-Impact-of-Hitting-System-Resource-Limits-on-Test-Flakiness
+date-released: '2024-03-01'
